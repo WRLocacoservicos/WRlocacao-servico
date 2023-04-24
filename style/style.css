@@ -149,6 +149,7 @@ nav ul a:hover::after {
   margin: 150px;
   text-align: center;
   padding: 0 90px;
+  margin-top:248px;
 }
 
 .banner .banner-text h1 {
