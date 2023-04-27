@@ -17,7 +17,7 @@
 } */
 
 body {
-  background-color: #1e1e1e;
+  background-color: #010525;
 }
 
 section {
@@ -107,7 +107,7 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
-  background-color: #1e1e1e;
+  background-color: #010525;
 
 }
 
@@ -160,7 +160,7 @@ nav ul a:hover::after {
 .banner .banner-text h1 {
   font-size: 40px;
   color: white;
-  text-shadow: 0 0 15px #0e0e0e;
+  text-shadow: 0 0 15px #010525;
 }
 
 .banner .banner-text p {
@@ -175,7 +175,7 @@ nav ul a:hover::after {
 }
 
 .faca-mais .container {
-  background-color: #1e1e1e;
+  background-color: #010525;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -188,7 +188,7 @@ nav ul a:hover::after {
 }
 
 .servicos {
-  background-color: #1e1e1e;
+  background-color: #010525;
 }
 
 .faca-mais-text {
@@ -233,12 +233,12 @@ nav ul a:hover::after {
   height: 0;
   border-top: 80px solid transparent;
   border-bottom: 0px solid transparent;
-  border-left: 100vw solid #1e1e1e
+  border-left: 100vw solid #010525
 }
 
 .banner2 {
   overflow-y: hidden;
-  background-color: #1e1e1e;
+  background-color: #010525;
   background-image: url(../img/Galeria/solda.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -258,7 +258,7 @@ nav ul a:hover::after {
 
   overflow: hidden;
   display: flex;
-  background-color: #1e1e1e;
+  background-color: #010525;
 
 
 }
@@ -287,7 +287,7 @@ nav ul a:hover::after {
   position: absolute;
   margin-top: -2;
   height: 0;
-  border-top: 80px solid #1e1e1e;
+  border-top: 80px solid #010525;
   border-bottom: 0px solid transparent;
   border-left: 100vw solid transparent;
 }
@@ -430,14 +430,14 @@ h1 {
   height: 0;
   border-top: 80px solid transparent;
   border-bottom: 0px solid transparent;
-  border-left: 100vw solid #1e1e1e;
+  border-left: 100vw solid #010525;
 }
 
 .triangulo4 {
   position: absolute;
   margin-top: 25px;
   height: 0;
-  border-top: 80px solid #1e1e1e;
+  border-top: 80px solid #010525;
   border-bottom: 0px solid transparent;
   border-left: 100vw solid transparent;
 
@@ -449,11 +449,11 @@ h1 {
    height: 40vw; 
   border-top: 80px solid transparent;
   border-bottom: 0px solid transparent;
-  border-left: 100vw solid #1e1e1e;
+  border-left: 100vw solid #010525;
 } */
 
 .galeriaEmpresa {
-  background-color: #1e1e1e;
+  background-color: #010525;
   margin-top: -100px;
 
 }
@@ -568,7 +568,7 @@ h1 {
   position: absolute;
   margin-top: 25px;
   height: 0;
-  border-top: 80px solid #1e1e1e;
+  border-top: 80px solid #010525;
   border-bottom: 0px solid transparent;
   border-left: 100vw solid transparent;
 }
@@ -581,7 +581,7 @@ h1 {
   height: 0;
   border-top: 80px solid transparent;
   border-bottom: 0px solid transparent;
-  border-left: 100vw solid #1e1e1e;
+  border-left: 100vw solid #010525;
 }
 
 
@@ -595,7 +595,7 @@ h1 {
 }
 
 .forms form {
-  background-color: #1e1e1e;
+  background-color: #010525;
   margin: auto;
 }
 
@@ -661,7 +661,7 @@ dialog::backdrop {
 }
 
 dialog {
-  background-color: #1e1e1e;
+  background-color: #010525;
   border: none;
   margin: auto;
   outline: none;
