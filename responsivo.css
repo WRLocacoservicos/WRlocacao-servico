@@ -208,7 +208,9 @@ p {
 }
 
 #btnTopo {
-  margin-right: 124px;
+  margin-left: 0;
+  margin-bottom: 115px;
+  font-size: 10px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -299,7 +301,7 @@ nav {
   left: -100%;
   width: 100%;
   transition: all 0.5s ease;
-  background-color: #111;
+  background-color: #111111de;
 }
 
 nav ul a {
@@ -311,4 +313,8 @@ nav ul a {
   margin: 10px 0;
   border-bottom: solid 2px #0821b1;
 
+}
+
+.mapa iframe{
+  width: 90%;
 }
