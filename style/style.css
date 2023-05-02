@@ -72,7 +72,7 @@ p {
 }
 
 .btn:hover {
-  background-color: #3580db;
+  background-color: #0d0499;
 }
 
 @keyframes animaBotao {
@@ -86,11 +86,11 @@ p {
 }
 
 header {
-  background-image: url(../img/Galeria/estrutura.jpeg);
+  background-image: url(../img/soldando.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
 
 }
 
@@ -107,7 +107,7 @@ nav {
 nav ul {
   display: flex;
   align-items: center;
-  background-color: #010525;
+  background-color: #010525c7;
 
 }
 
@@ -545,7 +545,7 @@ h1 {
 
 #BannerCliente {
   display: flex;
-  background-image: url(../img/contrato.jpg);
+  background-image: url(../img/contrato.webp);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
