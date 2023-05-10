@@ -99,40 +99,7 @@ document.addEventListener('keydown', function (event) {
   }
 });
 // Fim da galeria Serviços
-// galeria Clientes
-controls.forEach((control) => {
 
-  control.addEventListener("click", (e) => {
-    isLeft = e.target.classList.contains("arrow-left");
-
-    if (isLeft) {
-      currentItem -= 1;
-    } else {
-      currentItem += 1;
-    }
-
-    if (currentItem >= maxItems) {
-      currentItem = 0;
-    }
-
-    if (currentItem < 0) {
-      currentItem = maxItems - 1;
-    }
-
-    items.forEach((item) => item.classList.remove("current-item"));
-
-    items[currentItem].scrollIntoView({
-      behavior: "smooth",
-      inline: "center"
-    });
-
-    items[currentItem].classList.add("current-item");
-
-
-  });
-});
-// s
-// fim galeria Clientes
 
 
 function abrirModal() {
