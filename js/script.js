@@ -9,10 +9,31 @@ const fecharModal = document.querySelector('#fecharModal');
 const controls = document.querySelectorAll(".control");
 let currentItem = 0;
 const items = document.querySelectorAll(".item");
-
+const dia = document.getElementById('dia')
 const maxItems = items.length;
+//Comprimento
 
+function comprimentar() {
+  let data = new Date();
+  let hr = data.getHours();
+  // let hr = 15
+  if(hr>= 0 && hr <= 5){
+    dia.innerHTML = 'Boa madrugada!'
+    // console.log('boa madrugada')
+  }else if(hr >= 6 && hr <12 ){
+    dia.innerHTML = 'Bom dia!'
+    // console.log('bom dia')
+  } if (hr >= 12 && hr < 18) { 
+    dia.innerHTML = 'Boa tarde!'
+    // console.log('Boa tarde')
+  } else if (hr >= 18 && hr<= 23) {
+    dia.innerHTML = 'Boa noite!'
+    // console.log('boa noite')
+  }
+  console.log(hr)
+}
 
+comprimentar()
 // galeria Serviços
 
 
