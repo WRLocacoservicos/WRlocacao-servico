@@ -5,9 +5,10 @@
 
 
 header {
-  background-image: url(./img/LogoFundo.png);
+  background-image: url(./img/fundo.png);
   background-size: contain;
-  background-position-y: top;
+  background-position-y: 55px;
+  background-color: #090455;
 
 
 }
@@ -18,6 +19,7 @@ h3 {
 
 p {
   font-size: 14px;
+  
 }
 
 .banner .banner-text {
@@ -29,27 +31,18 @@ p {
 
 .banner .banner-text h1 {
   font-size: 32px;
+  color: #0821b1;
 }
 
 .banner .banner-text p {
-  display: none;
-}
-
-.logo img {
-  display: none;
-}
-.logo {
-  background-image: url(../img/fundo.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: 2%;
-  padding: 20px;
-
+  font-weight: bold;
+  color: #2c3ea3;
+  /* display: none; */
 }
 
 #saibamais {
-  margin-top: 50%;
-  margin-left: 18%;
+  /* margin-top: 50%; */
+  margin-left: 25%;
 
 }
 
