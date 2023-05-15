@@ -161,10 +161,11 @@ nav ul a:hover::after {
 }
 .banner .banner-text h2 {
   font-size: 40px;
-  color: rgb(85, 68, 163);
+  color: #ffffff;
   background-color: #616161c4;
   margin-top: 10px;
  padding: 15px;
+ border: solid 1px white;
 
 }
 
@@ -591,7 +592,7 @@ h1 {
 }
 
 .forms p {
-  color: #ffffff;
+  color: #000000;
 }
 
 .forms h4 {
@@ -601,39 +602,44 @@ h1 {
 
 .forms input {
   outline: none;
-  border-radius: 5px;
-  background-color: #0f0f0f;
-  color: #fff;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
   padding: 5px;
   border-bottom: 2px solid #3580db;
+  transition: 1s;
+}
 
+.forms input:hover{
+  background-color: #17b0d6;
+  border-radius: 5px;
 }
 
 .forms textarea {
   outline: none;
+  border: solid 2px  #3580db;
   border-radius: 5px;
-  background-color: #0f0f0f;
-  border-bottom: 2px solid #3580db;
+  background-color: #ffffff;
   resize: none;
-  color: #fff;
+  color: #000000;
 }
 
 #enviaForm {
   display: flex;
   margin: auto;
   padding: 25px;
+  border: none;
   margin-bottom: 10px;
   margin-top: 10px;
   color: #ffffff;
-  background-color: #333;
+  background-color: #3253be;
   cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
   transition: 1s;
-  z-index: 9999;
 }
 
 #enviaForm:hover {
-  background-color: #555;
+  background-color: #02a8f5;
 
 }
 
@@ -647,16 +653,17 @@ h1 {
 }
 
 dialog::backdrop {
-  background-color: rgba(97, 94, 94, 0.9);
+  background-color: #0a0a0ae6;
 
 }
 
 dialog {
-  background-color: #081153b9;
+  background-color: #ffffff;
   border: none;
   margin: auto;
   outline: none;
   width: 400px;
+   opacity: 1;
 }
 
 
@@ -672,66 +679,18 @@ h1 {
 } 
 
 
-/*
-
-
-.arrow-left,
-.arrow-right {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 250px;
-  bottom: 0;
-  font-size: 20px;
-  line-height: 25px;
-  width: 40px;
-  color: #fff;
-  transition: all 600ms ease-in-out;
-  background: linear-gradient(to left, transparent 5%, black 200%);
-  opacity: 0.3;
-  cursor: pointer;
-  border: none;
-}
-
-.slick-next,
-.slick-arrow {
-  background-color: transparent;
-  border: none;
-}
-
-.arrow-left:hover,
-.arrow-right:hover {
-  opacity: 1;
-}
-
-
-.arrow-right {
-  right: 1px;
-  left: auto;
-  text-align: right;
-  background: linear-gradient(to right, transparent 0%, black 200%);
-}
-
-.arrow-left {
-  margin-left: -14px;
-
-} */
 
 .gallery {
   display: flex;
-  margin-top: 70px;
   flex-wrap: wrap;
-  margin: auto;
-  width:90%;
+  justify-content: center;
   gap: 15px;
-
 }
 
 .item {
-
   width: 150px;
   height: 90px;
-  box-shadow: 0 0 9px rgb(10, 10, 10);
+  box-shadow: 0 0 9px #0a0a0a;
 }
 
 
@@ -743,8 +702,6 @@ footer {
   margin-top: 45px;
   width: 100%;
   height: 350px;
- 
-
 }
 
 footer i {
@@ -758,7 +715,6 @@ footer i {
 }
 
 .Footer p {
-
   padding: 5px;
   color: #fff;
 }
