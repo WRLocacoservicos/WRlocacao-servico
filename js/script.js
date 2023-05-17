@@ -10,6 +10,7 @@ const controls = document.querySelectorAll(".control");
 let currentItem = 0;
 const items = document.querySelectorAll(".item");
 const dia = document.getElementById('dia')
+const enviaForm = document.getElementById('enviaForm')
 const maxItems = items.length;
 //Comprimento
 
@@ -121,7 +122,12 @@ document.addEventListener('keydown', function (event) {
 });
 // Fim da galeria Serviços
 
+//dialog form
 
+enviaForm.addEventListener('click', ()=>{
+ let audio = new Audio('../audio/enviar.mp3')
+ audio.play()
+})
 
 function abrirModal() {
   Modal.showModal()

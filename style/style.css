@@ -12,6 +12,10 @@
 
 }
 
+.clima{
+  overflow: hidden;
+}
+
 /* html {
   scroll-behavior: smooth;
 } */
@@ -583,17 +587,22 @@ h1 {
 .forms {
   display: flex;
   margin: auto;
-  width: 100%;
-  height: 100%;
+;
 }
 
 .forms form {
+  padding: 35px;
   margin: auto;
+  background-color: #ffffff;
+  
 }
 
 .forms p {
   color: #000000;
+  font-weight: bold;
 }
+
+
 
 .forms h4 {
   text-align: center;
@@ -601,6 +610,7 @@ h1 {
 }
 
 .forms input {
+  width: 400px;
   outline: none;
   border: none;
   background-color: #ffffff;
@@ -616,6 +626,7 @@ h1 {
 }
 
 .forms textarea {
+  width: 400px;
   outline: none;
   border: solid 2px  #3580db;
   border-radius: 5px;
@@ -623,6 +634,7 @@ h1 {
   resize: none;
   color: #000000;
 }
+
 
 #enviaForm {
   display: flex;
@@ -646,7 +658,7 @@ h1 {
 #fecharModal {
   display: flex;
   justify-content: end;
-  color: #a8a4a4;
+  color: #0206f3;
   margin-right: 15px;
   margin-top: 10px;
   cursor: pointer;
@@ -658,12 +670,21 @@ dialog::backdrop {
 }
 
 dialog {
-  background-color: #ffffff;
+  background-image: url(../img/Galeria/faleconosco.jpeg);
   border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
   margin: auto;
   outline: none;
-  width: 400px;
+  width: 100%;
    opacity: 1;
+}
+dialog h1 {
+  color: #101780;
+  font-size: 3rem;
+  margin-top: -5px;
+  margin-bottom: -10px;
 }
 
 
