@@ -32,10 +32,13 @@ h3 {
   font-size: 30px;
   color: #8d6fbd;
   margin-top: 15px;
+  border-bottom: 1px dotted #4d4949;
 }
 
 p {
-  color: #111010;
+  color: #111010;   
+  /* background-color: #2d1a7ed8; */
+  /* background-image: linear-gradient(0deg, black, #4f9bf9); */
 }
 
 .logo {
@@ -161,7 +164,8 @@ nav ul a:hover::after {
 .banner .banner-text h1 {
   font-size: 40px;
   color: white;
-  text-shadow: 0 0 8px white;
+  /* text-shadow: 0 0 8px white; */
+  border-bottom: 2px dotted white;
 }
 .banner .banner-text h2 {
   font-size: 40px;
@@ -176,7 +180,7 @@ nav ul a:hover::after {
 
 .banner .banner-text p {
   font-size: 25px;
-  color: #ffffffb7;
+  color: #ffffff;
   font-weight: lighter;
   margin: 18px 0;
 }
@@ -235,6 +239,7 @@ nav ul a:hover::after {
   color: #8d6fbd;
   font-weight: bolder;
   text-transform: uppercase;
+  border-bottom: 2px dotted white;
 }
 
 .triangulo {
@@ -276,11 +281,17 @@ nav ul a:hover::after {
   font-family: 'Inter', sans-serif;
   margin-top: 15px;
   color: #dfdfdf;
-  background-color: #2d1a7ed8;
+   background-image: linear-gradient(0deg, black, #0c50e4); 
+   border-radius: 3px;
+   /* cursor: pointer; */
   width: 70%;
   margin-left: 20px;
   padding-right: 25px;
 }
+
+/* .textoServicos p:hover {
+  background-image: linear-gradient(0deg, #0c50e4, #000000);
+} */
 
 .NossoServico img {
   width: 50%;
@@ -295,6 +306,7 @@ nav ul a:hover::after {
   margin-top: -57px;
   position: absolute;
   margin-left: 49px;
+  border-bottom: 1px dotted #4d4949;
  
 
 
@@ -462,8 +474,7 @@ h1 {
 
 
 .galeriaEmpresa {
-  background-color: white
-
+  background-color: white;
 }
 
 .BannerFoto h1 {
@@ -475,6 +486,9 @@ h1 {
 }
 
 .galeria-container {
+  /* padding: 120px 20px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax 250px, 1fr ); */
   display: flex;
   margin-top: 70px;
   flex-wrap: wrap;
@@ -599,6 +613,7 @@ h1 {
 
 .forms p {
   color: #000000;
+  background-color: #ffffff;
   font-weight: bold;
 }
 
@@ -719,7 +734,7 @@ footer {
   display: flex;
   justify-content: space-around;
   margin-top: 33px;
-  background-color: #12063d;
+  background-image: linear-gradient(0deg, black, #4f9bf9);
   margin-top: 45px;
   width: 100%;
   height: 350px;
@@ -757,7 +772,8 @@ footer i {
 
 
 .zap {
-  background-color: #1ec213;
+  background-image: linear-gradient(0deg, black, #1ec213);
+  /* background-color: #1ec213; */
   color: white;
   text-align: center;
   border-top-left-radius: 10px;
@@ -765,10 +781,10 @@ footer i {
   transition: 1s;
 }
  .zap:hover {
-  background-color: #277a21;
+  background-image: linear-gradient(0deg, rgb(43, 42, 42), #11ff00);
  }
 .insta {
-  background: linear-gradient(#e66465, #9198e5);
+  background-image: linear-gradient(0deg, #f72f72,#0a19b4);
   color: white;
   text-align: center;
   border-top-right-radius: 10px;
@@ -777,7 +793,7 @@ footer i {
 }
 
 .insta:hover{
-  background: #df37a7;
+  background-image: linear-gradient(0deg, #f72f72,#4d5bfa);
 }
 .whatsapp i {
   display: none;
