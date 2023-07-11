@@ -44,7 +44,7 @@ let arrayImg = [
   "./img/Galeria/grades.jpg",
   "./img/Galeria/cami.jpg",
   "./img/Galeria/estrutura.jpeg",
-  "./img/Galeria/abs.jpg",
+  "./img/Galeria/icando.jpeg",
   "./img/Galeria/galeria_12_mini.jpg",
   "./img/Galeria/galeria_4_mini.jpg",
 ];
@@ -121,6 +121,12 @@ document.addEventListener('keydown', function (event) {
   }
 });
 // Fim da galeria Serviços
+
+// //dialog candidato
+//  let candidato = document.getElementById('candidato')
+//  candidato.showModal()
+
+
 
 //dialog form
 
