@@ -30,9 +30,9 @@ section {
 
 h3 {
   font-size: 30px;
-  color: #8d6fbd;
+  color: #24005e;
+  font-family: 'Courier New';
   margin-top: 15px;
-  border-bottom: 1px dotted #4d4949;
 }
 
 p {
@@ -42,9 +42,9 @@ p {
 }
 
 .logo {
-  background-image: url(../img/fundo.png);
+  background-image: url(../img/semfundo.png);
   /* background-position-y: 15px; */
-  /* margin-top: 5%; */
+  margin-bottom: -90px;
   background-size: contain;
   background-repeat: no-repeat;
   width: 150px;
@@ -52,19 +52,13 @@ p {
 
 }
 
-#logoMarca {
-  margin-top: 25px;
-  margin-bottom: -22%;
- 
-}
-
 .container {
 
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 5%;
-}
-
+  }
+  
 .btn {
   background-color: #176dd6;
   color: white;
@@ -101,14 +95,28 @@ header {
 
 }
 
+.responsive div {
+  display: inline-block;
+  margin: auto;
+  align-items: center;
+  width: 100%;
+}
+ 
+
+.responsive img {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  height: 540px;
+
+}
+
 nav {
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: -25%;
-  opacity: 1;
-
 }
 
 nav ul {
@@ -121,6 +129,8 @@ nav ul {
 nav ul a {
   color: #ffffff;
   margin: 0;
+  font-size:.7rem;
+  font-weight: bold;
   padding: 15px;
   text-transform: uppercase;
 
@@ -151,6 +161,7 @@ nav ul a:hover::after {
 .banner {
   display: flex;
   justify-content: center;
+  
 }
 
 .banner .banner-text {
@@ -164,16 +175,16 @@ nav ul a:hover::after {
 .banner .banner-text h1 {
   font-size: 40px;
   color: white;
+  font-family: 'Courier New';
   /* text-shadow: 0 0 8px white; */
-  border-bottom: 2px dotted white;
 }
 .banner .banner-text h2 {
   font-size: 40px;
   color: #ffffff;
-  background-color: #616161c4;
+  background-color: #6455b8c4;
+  font-family: 'Courier New';
   margin-top: 10px;
  padding: 15px;
- border: solid 1px white;
 
 }
 
@@ -239,7 +250,6 @@ nav ul a:hover::after {
   color: #8d6fbd;
   font-weight: bolder;
   text-transform: uppercase;
-  border-bottom: 2px dotted white;
 }
 
 .triangulo {
@@ -328,6 +338,7 @@ h1 {
   text-align: center;
   margin: 1em 0;
   font-family: sans-serif;
+  font-family: 'Courier New';
 
 }
 
@@ -573,6 +584,7 @@ h1 {
   text-shadow: 0 0 10px black;
   display: flex;
   margin: auto;
+  font-family: 'Courier New';
 }
 
 .triangulo6 {
@@ -622,6 +634,7 @@ h1 {
 .forms h4 {
   text-align: center;
   margin-top: 15px;
+  font-family: 'Courier New';
 }
 
 .forms input {
@@ -702,22 +715,50 @@ dialog h1 {
   font-size: 3rem;
   margin-top: -5px;
   margin-bottom: -10px;
+  font-family: 'Courier New';
 }
  /*candidato*/
 
  #candidato{
-  background-image: url(https://th.bing.com/th/id/OIP.m4odwmZcxe5ykNYfplYskgHaHa?pid=ImgDet&rs=1);
-  height: 500px;
-  background-size: contain;
+  display: none;
+  position: absolute;
+  background-color: white;
+  margin-left: 25%;
+  margin-top: -35%;
+  padding: 50px;
+  width: 50%;
+  z-index: 1;
+  transition: .5s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
  }
 
- #candidato h3 {
-  margin-top: 150px;
+ .fecharCandidato {
+  color: wheat;
+  position: relative;
+  cursor: pointer;
+  font-weight:bold;
+  padding: 5px;
+  border-radius: 50%;
   border: none;
+  background-color: red;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: .5s;
+ }
+ .fecharCandidato:hover{
+  background-color: blue;
+ }
+
+
+ #candidato h1, h2{
+  font-family: 'Courier New';
   text-align: center;
   color: #000000;
   font-weight: bolder;
   font-size: 2rem;
+ }
+ #candidato p {
+  text-align: center;
+  margin-bottom: 15px;
  }
 
  /* #btnCandidato {
@@ -747,6 +788,7 @@ dialog h1 {
   text-align: center;
   margin: 1em 0;
   font-family: sans-serif;
+  font-family: 'Courier New';
 }
 
 .container-clientes {

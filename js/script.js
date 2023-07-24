@@ -17,26 +17,19 @@ const maxItems = items.length;
 function comprimentar() {
   let data = new Date();
   let hr = data.getHours();
-  // let hr = 15
-  if(hr>= 0 && hr <= 5){
-    dia.innerHTML = 'Boa madrugada!'
-    // console.log('boa madrugada')
-  }else if(hr >= 6 && hr <12 ){
-    dia.innerHTML = 'Bom dia!'
-    // console.log('bom dia')
-  } if (hr >= 12 && hr < 18) { 
-    dia.innerHTML = 'Boa tarde!'
-    // console.log('Boa tarde')
-  } else if (hr >= 18 && hr<= 23) {
-    dia.innerHTML = 'Boa noite!'
-    // console.log('boa noite')
+  if (hr >= 0 && hr <= 5) {
+    dia.innerHTML = '⚙️Boa madrugada!⚙️';
+  } else if (hr >= 6 && hr < 12) {
+    dia.innerHTML = '⚙️Bom dia!⚙️';
+  } if (hr >= 12 && hr < 18) {
+    dia.innerHTML = '⚙️Boa tarde!⚙️';
+  } else if (hr >= 18 && hr <= 23) {
+    dia.innerHTML = '⚙️Boa noite!⚙️';
   }
-  console.log(hr)
+
 }
 
 comprimentar()
-// galeria Serviços
-
 
 let arrayImg = [
   "./img/Galeria/pecas.jpg",
@@ -122,17 +115,11 @@ document.addEventListener('keydown', function (event) {
 });
 // Fim da galeria Serviços
 
-// //dialog candidato
-//  let candidato = document.getElementById('candidato')
-//  candidato.showModal()
-
-
-
 //dialog form
 
-enviaForm.addEventListener('click', ()=>{
- let audio = new Audio('../audio/enviar.mp3')
- audio.play()
+enviaForm.addEventListener('click', () => {
+  let audio = new Audio('../audio/enviar.mp3')
+  audio.play()
 })
 
 function abrirModal() {
@@ -202,6 +189,34 @@ function closeNav() {
 }
 
 
+// trabalhe conosco
+
+let trabalheConosco = document.getElementById('btnTrabalhe')
+let candidato = document.getElementById('candidato')
 
 
+trabalheConosco.addEventListener('click', () => {
+  candidato.style.display = 'block';
+  // setInterval(closeCandidato,15000);
 
+  candidato.innerHTML = `
+   <button  class="fecharCandidato" onclick="closeCandidato()">X</button>
+  <h1>Trabalhe conosco</h1>
+
+  <h2>Olá!</h2>
+
+  <p>Seja bem-vindo a WR Locações e Serviços!</p>
+
+  <p>Através deste canal, você poderá enviar seu CV por e-mail. Seu CV será recebido pelo departamento de Recursos Humanos da WR para tratativas necessárias. Você poderá ser contactado a qualquer momento!</p>
+
+  <p>Envia seu CV para:</p>
+
+    <p>wrlocacoeseservicoswr@gmail.com </p>
+  
+  `
+})
+let fecharCandidato = document.querySelector('.fecharCandidato')
+
+function  closeCandidato(){
+  candidato.style.display = 'none';
+}

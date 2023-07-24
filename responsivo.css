@@ -5,16 +5,20 @@
 
 
 header {
-  background-image: url(./img/fundo.png);
+  background-image: url(./img/LogoFundo.png);
   background-size: contain;
   background-position-y: 55px;
   background-color: #090455;
-
-
 }
-
+  .triangulo{
+    display: none;
+  }
 h3 {
   font-size: 24px;
+}
+
+#dia {
+  font-size:20px;
 }
 
 p {
@@ -22,6 +26,21 @@ p {
   
 }
 
+
+#candidato h1, h2{
+
+  font-size: 1rem;
+ }
+
+
+ #candidato{
+  display: none;
+  background-color: rgb(224, 223, 223);
+  padding: 50px;
+  width: 90%;
+  margin-top: -205px;
+  margin-left: 5%;
+ }
 .banner .banner-text {
   font-size: 32px;
   padding: 0;
@@ -30,24 +49,18 @@ p {
 }
 
 .banner .banner-text h1 {
-  font-size: 32px;
-  color: #0821b1;
+ display: none;
 }
 
 .banner .banner-text p {
-  font-weight: bold;
-  color: #2c3ea3;
-  /* display: none; */
+
+  display: none;
 }
 
 #saibamais {
   /* margin-top: 50%; */
   margin-left: 25%;
 
-}
-
-#logoMarca {
-  display: none;
 }
 
 .container img {
@@ -236,10 +249,13 @@ footer{
   .ul {
     left: 0;
   }
-
+  .logo{
+    display: none;
+  }
   .open-btn {
     display: block;
     margin-right: 40px;
+    margin-top: 0;
   }
 }
 
@@ -294,7 +310,7 @@ nav {
 nav ul a {
   color: #fff;
   text-decoration: none;
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   text-align: center;
   padding: 5px;
   margin: 10px 0;
