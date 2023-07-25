@@ -202,16 +202,18 @@ trabalheConosco.addEventListener('click', () => {
   candidato.innerHTML = `
    <button  class="fecharCandidato" onclick="closeCandidato()">X</button>
   <h1>Trabalhe conosco</h1>
-
+  
   <h2>Olá!</h2>
 
   <p>Seja bem-vindo a WR Locações e Serviços!</p>
 
   <p>Através deste canal, você poderá enviar seu CV por e-mail. Seu CV será recebido pelo departamento de Recursos Humanos da WR para tratativas necessárias. Você poderá ser contactado a qualquer momento!</p>
 
-  <p>Envia seu CV para:</p>
+  <a class="emailCV" href="mailto:wrlocacoeseservicoswr@gmail.com?
+  subject= Curriculo 
+  
+  ">Envia seu CV</a>
 
-    <p>wrlocacoeseservicoswr@gmail.com </p>
   
   `
 })

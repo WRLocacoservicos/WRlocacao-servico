@@ -138,6 +138,22 @@ nav ul a {
 
 }
 
+.emailCV {
+  color: #ffffff;
+  background-color: #1414a8ce;
+  margin: 0;
+  font-size:.7rem;
+  font-weight: bold;
+  padding: 15px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
+
+}
+.emailCV:hover {
+  background-color: #176dd6;
+}
+
 nav ul a:hover {
   background-color: #176dd6;
 }
