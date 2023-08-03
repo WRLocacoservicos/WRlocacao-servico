@@ -7,7 +7,7 @@
 header {
   background-image: url(./img/LogoFundo.png);
   background-size: contain;
-  background-position-y: 55px;
+  background-position-y: 10px;
   background-color: #090455;
 }
   .triangulo{
@@ -74,6 +74,7 @@ p {
 .btn {
   font-size: 14px;
   margin-bottom: 50px;
+  margin-top: 15px;
 }
 
 .galeria {
@@ -97,13 +98,10 @@ p {
   margin-left: 35vw;
 }
 
-.Nossoservico {
+.servicos {
+  background-color: white;
+}
 
-  width: 100%;
-}
-.servicos p{
- margin-left: 15%;
-}
 
 .NossoServico img {
   display: none;
@@ -192,8 +190,7 @@ footer{
   background: linear-gradient(#e66465, #9198e5);
   color: white;
   text-align: center;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 
 .redesSociais a,
@@ -202,14 +199,14 @@ footer{
   display: none;
 }
 .responsiva {
-  display: flex;
-  margin-top: 150px;
+
+  margin-top: 50px;
   width: 56%;
 }
 
 #btnTopo {
   margin-left: 0;
-  margin-bottom: 115px;
+  margin-bottom: 11px;
   font-size: 10px;
 }
 
@@ -254,20 +251,24 @@ footer{
   }
   .open-btn {
     display: block;
-    margin-right: 40px;
-    margin-top: 0;
+    margin-left: 10px;
+    margin-top: 5px;
   }
 }
 
 .close-btn {
-  margin-right: 40px;
+  margin-left: 10px;
+  font-size: 2rem;
+  
+  
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #0c0549;
+  background-image: linear-gradient(0deg,#0051b4, black);
+
   color: #fff;
   position: fixed;
   top: 0;

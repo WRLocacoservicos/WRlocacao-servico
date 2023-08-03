@@ -30,10 +30,6 @@
     <div class="container">
       <div class="logo"></div>
       <nav>
-        <a href="#heder">
-          
-          
-        </a>
         <ul class="ul">
           <a href="#heade" class="smooth-scroll" onclick="closeNav()">Inicio</a>
           <a href="#sobre" class="smooth-scroll" onclick="closeNav()">Sobre</a>
@@ -43,17 +39,20 @@
           <a href="#contato" class="smooth-scroll" onclick="closeNav()">Contato</a>
           <a href="https://drive.google.com/file/d/1ZG30Siecxwmme66FUZ8zRZ2n1SeUR-No/view?usp=sharing" class="smooth-scroll" onclick="closeNav()">Portifólio</a>
           <a href= "#" id="btnTrabalhe" class="smooth-scroll" onclick="closeNav()">Trabalhe conosco</a>
-          <span class="close-btn" onclick="closeNav()">&times;</span>
+        
         </ul>
         <span class="open-btn" onclick="openNav()">&#9776;</span>
+        <span class="close-btn" onclick="closeNav()">&times;</span>
       </nav>
 
       <section class="banner">
+        
         <div class="banner-text">
+          <h2 id="dia"></h2>
           <h1 >WR Locações e Serviços</h1>
           <p> Trabalhando na busca da satisfação do cliente.</p>
           <a onclick="abrirModal()" class="btn">Entrar em contato</a>
-          <h2 id="dia"></h2>
+          
   
         </div>
      
@@ -361,15 +360,18 @@
 
       </form>
     </section>
-
+    
   </dialog>
+ 
 
-  <button id="btnTopo"><i class="fa fa-angle-up" aria-hidden="true"></i>
-  </button>
+  <a  
+  onmouseover="showMessage()" onmouseout="hideMessage()"
+  href="https://wa.me/message/6NFTKCZR7XM2C1" id="btnTopo"> <i class="fa fa-whatsapp" aria-hidden="true"></i>
+  </a>  <div class="mensagem">Olá, Seja Bem Vindo 😃 </div>
 
 
   <footer id="contato">
-    <a class="elementor-icon elementor-animation-buzz" href="https://wa.me/5541992784151">
+    <a class="elementor-icon elementor-animation-buzz" href="https://wa.me/message/6NFTKCZR7XM2C1">
       <i aria-hidden="true" class="fab fa-whatsapp-square"></i>			
     </a>
 
@@ -395,9 +397,7 @@
       
     </div>
     <div class="responsiva">
-      <a href="https://wa.me/message/6NFTKCZR7XM2C1" class="whatsapp">
-        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-      </a>
+    
       <a href="https://instagram.com/wr.servicos.locacoes?igshid=ZDdkNTZiNTM=" class="instagram">
         <i class="fa fa-instagram" aria-hidden="true" style="color: white;"></i>
       </a>

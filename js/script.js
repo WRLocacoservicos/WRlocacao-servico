@@ -150,42 +150,74 @@ $(document).ready(function () {
 // Fim da animação suave ao clicar
 
 //Botao para o topo
+let mensagem = document.querySelector(".mensagem");
 
-function scrollToTop() {
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop > 0) {
-    window.scrollTo(0, 0);
-    window.requestAnimationFrame(scrollToTop);
-  }
+function showMessage() {
+  mensagem.style.display = "block";
 }
 
-btnTopo.addEventListener('click', function () {
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop > 0) {
-    window.requestAnimationFrame(scrollToTop);
-  }
-});
+function hideMessage() {
+  mensagem.style.display = "none";
+}
 
-window.addEventListener('scroll', function () {
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop > 300) {
-    btnTopo.classList.add('show');
+// function scrollToTop() {
+//   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//   if (scrollTop > 0) {
+//     window.scrollTo(0, 0);
+//     window.requestAnimationFrame(scrollToTop);
+//   }
+// }
 
+// btnTopo.addEventListener('click', function () {
+//   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//   if (scrollTop > 0) {
+//     window.requestAnimationFrame(scrollToTop);
+//   }
+// });
+
+// window.addEventListener('scroll', function () {
+//   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+//   if (scrollTop > 300) {
+//     btnTopo.classList.add('show');
+
+//   } else {
+//     btnTopo.classList.remove('show');
+//   }
+//   if (windowHeight ) {
+//     btnTopo.classList.remove('show');
+
+//   }
+
+// });
+
+window.addEventListener("scroll", function () {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  const scrollHeight = document.documentElement.scrollHeight;
+  const clientHeight = document.documentElement.clientHeight;
+  const btnTopo = document.querySelector("#btnTopo"); // Certifique-se de selecionar o botão correto
+
+  if (scrollTop + clientHeight >= scrollHeight) {
+    btnTopo.classList.remove("show");
   } else {
-    btnTopo.classList.remove('show');
+    btnTopo.classList.add("show");
   }
 });
+
 //menu celular
 const closeBtn = document.querySelector(".close-btn");
+const openBtn = document.querySelector(".open-btn");
 
 function openNav() {
   document.querySelector('.ul').style.left = '0';
   closeBtn.style.display = 'block'
+  openBtn.style.display = 'none'
+  
 
 }
 function closeNav() {
   document.querySelector('.ul').style.left = '-100%';
   closeBtn.style.display = 'none'
+  openBtn.style.display = 'block'
 }
 
 
@@ -222,3 +254,42 @@ let fecharCandidato = document.querySelector('.fecharCandidato')
 function  closeCandidato(){
   candidato.style.display = 'none';
 }
+
+const header = document.querySelector("#header");
+const navHeight = header.offsetHeight;
+function changeHeaderWhenScroll() {
+  if (window.scrollY >= navHeight) {
+    // scroll é maior que a altura do header
+    header.classList.add("scroll");
+  } else {
+    // menor que a altura do header
+    header.classList.remove("scroll");
+  }
+}
+/* ScrollReveal: Mostrar elementos quando der scroll na página */
+const scrollReveal = scrollReveal({
+  origin: "top",
+  distance: "30px",
+  duration: 700,
+  reset: true,
+});
+/*
+<a href="#heade" class="smooth-scroll" onclick="closeNav()">Inicio</a>
+          <a href="#sobre" class="smooth-scroll" onclick="closeNav()">Sobre</a>
+          <a href="#servico" class="smooth-scroll" onclick="closeNav()">Serviços</a>
+          <a href="#galeria" class="smooth-scroll" onclick="closeNav()">Galeria</a>
+          <a href="#BannerCliente" class="smooth-scroll" onclick="closeNav()">Clientes</a>
+          <a href="#contato" class="smooth-scroll" onclick="closeNav()">Contato</a>
+
+*/
+
+
+
+scrollReveal.reveal(
+  `#heade .banner, #heade .banner-text,
+   #sobre .container, #sobre .faca-mais-text,
+   #servico  .container-servicos, 
+
+  `,
+  { interval: 100 }
+);

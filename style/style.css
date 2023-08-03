@@ -42,21 +42,21 @@ p {
 }
 
 .logo {
+  margin-top: 100px;
   background-image: url(../img/semfundo.png);
-  /* background-position-y: 15px; */
-  margin-bottom: -90px;
   background-size: contain;
   background-repeat: no-repeat;
   width: 150px;
   height: 150px;
+  margin-top: 35px;
 
 }
 
 .container {
 
   max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
-  padding: 0 5%;
   }
   
 .btn {
@@ -87,7 +87,7 @@ p {
 }
 
 header {
-  background-image: url(../img/soldando.webp);
+  background-image: url(../img/tanques.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -112,31 +112,38 @@ header {
 }
 
 nav {
-
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: -25%;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1;
+  overflow: hidden;
 }
 
 nav ul {
   display: flex;
-  align-items: center;
-  background-color: #1414a8ce;
+  justify-content: flex-end;
+  background-image: linear-gradient(0deg, #0051b4, black);
 
 }
+
 
 nav ul a {
   color: #ffffff;
-  margin: 0;
-  font-size:.7rem;
-  font-weight: bold;
-  padding: 15px;
+  font-size:.8rem;
+  padding: 25px;
   text-transform: uppercase;
-
+  font-family:sans-serif;
   transition: 0.3s;
 
 }
+nav a:hover {
+  border-radius: 15px;
+}
+
 
 .emailCV {
   color: #ffffff;
@@ -152,10 +159,11 @@ nav ul a {
 }
 .emailCV:hover {
   background-color: #176dd6;
+  
 }
 
-nav ul a:hover {
-  background-color: #176dd6;
+nav ul a:hover { 
+   background-image: linear-gradient(0deg, #176dd6, black);
 }
 
 
@@ -181,11 +189,9 @@ nav ul a:hover::after {
 }
 
 .banner .banner-text {
-  margin: 150px;
+  margin-bottom: 50px;
   text-align: center;
   padding: 0 90px;
-  margin-top: 248px;
-  margin-top:248px;
 }
 
 .banner .banner-text h1 {
@@ -197,9 +203,8 @@ nav ul a:hover::after {
 .banner .banner-text h2 {
   font-size: 40px;
   color: #ffffff;
-  background-color: #6455b8c4;
+  background-color: #1a1825c4;
   font-family: 'Courier New';
-  margin-top: 10px;
  padding: 15px;
 
 }
@@ -230,7 +235,9 @@ nav ul a:hover::after {
 }
 
 .servicos {
+
   background-color: white;
+  
 }
 
 .faca-mais-text {
@@ -306,8 +313,8 @@ nav ul a:hover::after {
 .servicos p {
   font-family: 'Inter', sans-serif;
   margin-top: 15px;
-  color: #dfdfdf;
-   background-image: linear-gradient(0deg, black, #0c50e4); 
+  color: #000000;
+   /* background-image: linear-gradient(0deg, black, #0c50e4);  */
    border-radius: 3px;
    /* cursor: pointer; */
   width: 70%;
@@ -315,9 +322,13 @@ nav ul a:hover::after {
   padding-right: 25px;
 }
 
-/* .textoServicos p:hover {
-  background-image: linear-gradient(0deg, #0c50e4, #000000);
-} */
+.textoServicos{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+
+}
 
 .NossoServico img {
   width: 50%;
@@ -332,10 +343,6 @@ nav ul a:hover::after {
   margin-top: -57px;
   position: absolute;
   margin-left: 49px;
-  border-bottom: 1px dotted #4d4949;
- 
-
-
 }
 
 .triangulo2 {
@@ -546,15 +553,29 @@ h1 {
 }
 
 /* Botao para o topo */
+.mensagem {
+  display: none;
+  position: fixed;
+  text-align: center;
+  bottom: 150px;
+  right: 20px;
+  margin-left: -25px;
+  margin: auto ;
+  padding: 25px;
+  border: none;
+  color: #fff;
+  background-color: #242121;
+  border-radius: 25px 25px 0;
+}
+
+
 #btnTopo {
   display: none;
   position: fixed;
   bottom: 50px;
   right: 50px;
-  z-index: 9999;
-  font-size: 16px;
-  padding: 2px 12px;
-  background-color: #33333394;
+  padding: 12px 17px;
+  background-color: #1fb311f5;
   opacity: 5;
   color: #fff;
   border: none;
@@ -569,7 +590,7 @@ h1 {
 }
 
 #btnTopo i {
-  font-size: 53px;
+  font-size: 30px;
   color: white;
 
 }
@@ -736,8 +757,9 @@ dialog h1 {
  /*candidato*/
 
  #candidato{
+
   display: none;
-  position: absolute;
+  position: fixed;
   background-color: white;
   margin-left: 25%;
   margin-top: -35%;
@@ -776,29 +798,6 @@ dialog h1 {
   text-align: center;
   margin-bottom: 15px;
  }
-
- /* #btnCandidato {
- 
-  
-    margin: auto;
-    flex-direction: column;
-    padding: 25px;
-    border: none;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    color: #ffffff;
-    background-color: #3253be;
-    cursor: pointer;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
-    transition: 1s;
-  } */
-
- /* #candidato #upload {
- display: flex;
- margin: auto;
- border: none;
- background-color: #fdfdfd;
- } */
  
  h1 {
   text-align: center;
@@ -824,7 +823,6 @@ dialog h1 {
 .item {
   width: 150px;
   height: 90px;
-  box-shadow: 0 0 9px #0a0a0a;
 }
 
 
@@ -832,7 +830,7 @@ footer {
   display: flex;
   justify-content: space-around;
   margin-top: 33px;
-  background-image: linear-gradient(0deg, black, #4f9bf9);
+  background-image: linear-gradient(0deg, black, #0051b4);
   margin-top: 45px;
   width: 100%;
   height: 350px;
@@ -933,7 +931,6 @@ footer i {
 .open-btn {
   display: none;
   font-size: 2rem;
-  cursor: pointer;
 }
 
 .close-btn {
