@@ -12,7 +12,7 @@
 
 }
 
-.clima{
+.clima {
   overflow: hidden;
 }
 
@@ -36,7 +36,7 @@ h3 {
 }
 
 p {
-  color: #111010;   
+  color: #111010;
   /* background-color: #2d1a7ed8; */
   /* background-image: linear-gradient(0deg, black, #4f9bf9); */
 }
@@ -57,8 +57,8 @@ p {
   max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  }
-  
+}
+
 .btn {
   background-color: #176dd6;
   color: white;
@@ -68,8 +68,8 @@ p {
   display: inline-block;
   transition: 1s;
   animation: animaBotao 1s ease-in-out infinite;
- 
- 
+
+
 }
 
 .btn:hover {
@@ -87,11 +87,12 @@ p {
 }
 
 header {
-  background-image: url(../img/tanques.jpeg);
+  background-image: url(../img/capa.png);
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
+  height: 100vh;
 
 }
 
@@ -101,7 +102,7 @@ header {
   align-items: center;
   width: 100%;
 }
- 
+
 
 .responsive img {
   display: flex;
@@ -127,21 +128,31 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   background-image: linear-gradient(0deg, #0051b4, black);
-
+  transition: 5s;
 }
 
+
+nav li {
+  color: #ffffff;
+  font-size: .8rem;
+  padding: 25px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+
+
+}
 
 nav ul a {
   color: #ffffff;
-  font-size:.8rem;
-  padding: 25px;
+  font-size: .8rem;
   text-transform: uppercase;
-  font-family:sans-serif;
-  transition: 0.3s;
+  font-family: sans-serif;
+  text-decoration: none;
 
 }
-nav a:hover {
-  border-radius: 15px;
+
+nav li:hover {
+  background-image: linear-gradient(0deg, black, #0051b4);
 }
 
 
@@ -149,7 +160,7 @@ nav a:hover {
   color: #ffffff;
   background-color: #1414a8ce;
   margin: 0;
-  font-size:.7rem;
+  font-size: .7rem;
   font-weight: bold;
   padding: 15px;
   text-transform: uppercase;
@@ -157,14 +168,12 @@ nav a:hover {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.61);
 
 }
+
 .emailCV:hover {
   background-color: #176dd6;
-  
+
 }
 
-nav ul a:hover { 
-   background-image: linear-gradient(0deg, #176dd6, black);
-}
 
 
 /* nav ul a:not(.btn):after {
@@ -185,7 +194,7 @@ nav ul a:hover::after {
 .banner {
   display: flex;
   justify-content: center;
-  
+
 }
 
 .banner .banner-text {
@@ -194,25 +203,21 @@ nav ul a:hover::after {
   padding: 0 90px;
 }
 
-.banner .banner-text h1 {
-  font-size: 40px;
-  color: white;
-  font-family: 'Courier New';
-  /* text-shadow: 0 0 8px white; */
-}
+
 .banner .banner-text h2 {
   font-size: 40px;
   color: #ffffff;
   background-color: #1a1825c4;
   font-family: 'Courier New';
- padding: 15px;
+  padding: 15px;
+  margin-top: 70px;
 
 }
 
 
 .banner .banner-text p {
   font-size: 25px;
-  color: #ffffff;
+  color: #352a2a;
   font-weight: lighter;
   margin: 18px 0;
 }
@@ -237,7 +242,7 @@ nav ul a:hover::after {
 .servicos {
 
   background-color: white;
-  
+
 }
 
 .faca-mais-text {
@@ -256,8 +261,7 @@ nav ul a:hover::after {
 
 #saibamais {
 
-  margin-top: 90px;
-  margin-left: 33%;
+  margin-left: 25%;
 }
 
 .imagemSobre {
@@ -314,15 +318,15 @@ nav ul a:hover::after {
   font-family: 'Inter', sans-serif;
   margin-top: 15px;
   color: #000000;
-   /* background-image: linear-gradient(0deg, black, #0c50e4);  */
-   border-radius: 3px;
-   /* cursor: pointer; */
+  /* background-image: linear-gradient(0deg, black, #0c50e4);  */
+  border-radius: 3px;
+  /* cursor: pointer; */
   width: 70%;
   margin-left: 20px;
   padding-right: 25px;
 }
 
-.textoServicos{
+.textoServicos {
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -482,7 +486,8 @@ h1 {
   margin-left: 43.2%;
   margin-top: 25px;
 }
-.btnServico:hover{
+
+.btnServico:hover {
   background-color: #1e3755f1;
 }
 
@@ -560,7 +565,7 @@ h1 {
   bottom: 150px;
   right: 20px;
   margin-left: -25px;
-  margin: auto ;
+  margin: auto;
   padding: 25px;
   border: none;
   color: #fff;
@@ -650,14 +655,14 @@ h1 {
 .forms {
   display: flex;
   margin: auto;
-;
+  ;
 }
 
 .forms form {
   padding: 35px;
   margin: auto;
   background-color: #ffffff;
-  
+
 }
 
 .forms p {
@@ -685,7 +690,7 @@ h1 {
   transition: 1s;
 }
 
-.forms input:hover{
+.forms input:hover {
   background-color: #17b0d6;
   border-radius: 5px;
 }
@@ -693,7 +698,7 @@ h1 {
 .forms textarea {
   width: 400px;
   outline: none;
-  border: solid 2px  #3580db;
+  border: solid 2px #3580db;
   border-radius: 5px;
   background-color: #ffffff;
   resize: none;
@@ -745,8 +750,9 @@ dialog {
   margin: auto;
   outline: none;
   width: 100%;
-   opacity: 1;
+  opacity: 1;
 }
+
 dialog h1 {
   color: #101780;
   font-size: 3rem;
@@ -754,9 +760,10 @@ dialog h1 {
   margin-bottom: -10px;
   font-family: 'Courier New';
 }
- /*candidato*/
 
- #candidato{
+/*candidato*/
+
+#candidato {
 
   display: none;
   position: fixed;
@@ -768,38 +775,41 @@ dialog h1 {
   z-index: 1;
   transition: .5s;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
- }
+}
 
- .fecharCandidato {
+.fecharCandidato {
   color: wheat;
   position: relative;
   cursor: pointer;
-  font-weight:bold;
+  font-weight: bold;
   padding: 5px;
   border-radius: 50%;
   border: none;
   background-color: red;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: .5s;
- }
- .fecharCandidato:hover{
+}
+
+.fecharCandidato:hover {
   background-color: blue;
- }
+}
 
 
- #candidato h1, h2{
+#candidato h1,
+h2 {
   font-family: 'Courier New';
   text-align: center;
   color: #000000;
   font-weight: bolder;
   font-size: 2rem;
- }
- #candidato p {
+}
+
+#candidato p {
   text-align: center;
   margin-bottom: 15px;
- }
- 
- h1 {
+}
+
+h1 {
   text-align: center;
   margin: 1em 0;
   font-family: sans-serif;
@@ -808,8 +818,8 @@ dialog h1 {
 
 .container-clientes {
   margin-top: 25px;
- width: auto;
-} 
+  width: auto;
+}
 
 
 
@@ -876,11 +886,13 @@ footer i {
   border-bottom-left-radius: 10px;
   transition: 1s;
 }
- .zap:hover {
+
+.zap:hover {
   background-image: linear-gradient(0deg, rgb(43, 42, 42), #11ff00);
- }
+}
+
 .insta {
-  background-image: linear-gradient(0deg, #f72f72,#0a19b4);
+  background-image: linear-gradient(0deg, #f72f72, #0a19b4);
   color: white;
   text-align: center;
   border-top-right-radius: 10px;
@@ -888,9 +900,10 @@ footer i {
   transition: 1s;
 }
 
-.insta:hover{
-  background-image: linear-gradient(0deg, #f72f72,#4d5bfa);
+.insta:hover {
+  background-image: linear-gradient(0deg, #f72f72, #4d5bfa);
 }
+
 .whatsapp i {
   display: none;
 }
@@ -943,7 +956,7 @@ footer i {
 }
 
 
-.mapa iframe{
+.mapa iframe {
   width: 250px;
   height: 150px;
   display: flex;
@@ -951,5 +964,5 @@ footer i {
   border-radius: 25px;
   overflow: hidden;
   margin-top: 45px;
-  
+
 }

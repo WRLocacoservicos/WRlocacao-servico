@@ -5,42 +5,46 @@
 
 
 header {
-  background-image: url(./img/LogoFundo.png);
+  background-image: url(./img/capaMobile.png);
   background-size: contain;
-  background-position-y: 10px;
-  background-color: #090455;
+  background-position: center;
+  height: 45vh;
 }
-  .triangulo{
-    display: none;
-  }
+
+.banner-text {
+  display: none;
+}
+
 h3 {
   font-size: 24px;
 }
 
 #dia {
-  font-size:20px;
+  font-size: 20px;
 }
 
 p {
   font-size: 14px;
-  
+
 }
 
 
-#candidato h1, h2{
+#candidato h1,
+h2 {
 
   font-size: 1rem;
- }
+}
 
 
- #candidato{
+#candidato {
   display: none;
   background-color: rgb(224, 223, 223);
   padding: 50px;
   width: 90%;
   margin-top: -205px;
   margin-left: 5%;
- }
+}
+
 .banner .banner-text {
   font-size: 32px;
   padding: 0;
@@ -49,7 +53,7 @@ p {
 }
 
 .banner .banner-text h1 {
- display: none;
+  display: none;
 }
 
 .banner .banner-text p {
@@ -58,7 +62,7 @@ p {
 }
 
 #saibamais {
-  /* margin-top: 50%; */
+  margin-top: 5px;
   margin-left: 25%;
 
 }
@@ -81,12 +85,15 @@ p {
   width: 95%;
   margin-left: 15vw;
 }
+
 .gallery {
-  gap:4px;
- }
+  gap: 4px;
+}
+
 .galeriaEmpresa {
   margin-top: -2px;
 }
+
 .galeria-items {
   width: 300px;
 }
@@ -106,7 +113,7 @@ p {
 .NossoServico img {
   display: none;
   margin-right: 15px;
- box-shadow: 0 0 20px black;
+  box-shadow: 0 0 20px black;
 }
 
 .BannerFoto h1 {
@@ -116,13 +123,16 @@ p {
 #BannerCliente {
   height: 99vw;
 }
+
 #BannerCliente h1 {
   margin-top: 115px;
 }
+
 #serv {
 
   margin-top: -50px;
 }
+
 .imagemSobre {
   margin-left: 0;
 }
@@ -137,13 +147,14 @@ p {
   background-image: url(../img/Galeria/guincho.JPG);
   /* background-attachment: fixed; */
   background-repeat: no-repeat;
-  background-size:auto;
+  background-size: auto;
 
 }
 
 .BannerGaleria h1 {
   margin-top: 152px;
 }
+
 .btnServico {
   margin-left: 30.2%;
 }
@@ -170,7 +181,8 @@ p {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
 }
-footer{
+
+footer {
   height: 250px;
 }
 
@@ -198,6 +210,7 @@ footer{
 .insta {
   display: none;
 }
+
 .responsiva {
 
   margin-top: 50px;
@@ -246,9 +259,11 @@ footer{
   .ul {
     left: 0;
   }
-  .logo{
+
+  .logo {
     display: none;
   }
+
   .open-btn {
     display: block;
     margin-left: 10px;
@@ -259,15 +274,15 @@ footer{
 .close-btn {
   margin-left: 10px;
   font-size: 2rem;
-  
-  
+
+
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(0deg,#0051b4, black);
+  background-image: linear-gradient(0deg, #0051b4, black);
 
   color: #fff;
   position: fixed;
@@ -309,16 +324,15 @@ nav {
 }
 
 nav ul a {
+
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
   text-align: center;
-  padding: 5px;
-  margin: 10px 0;
-  border-bottom: solid 2px #0821b1;
+  /* padding: 5px; */
 
 }
 
-.mapa iframe{
+.mapa iframe {
   width: 90%;
 }

@@ -206,18 +206,22 @@ window.addEventListener("scroll", function () {
 //menu celular
 const closeBtn = document.querySelector(".close-btn");
 const openBtn = document.querySelector(".open-btn");
+const tradutor = document.querySelector('.gtranslate_wrapper')
 
 function openNav() {
   document.querySelector('.ul').style.left = '0';
   closeBtn.style.display = 'block'
   openBtn.style.display = 'none'
-  
+  tradutor.style.display = 'none'
+
 
 }
 function closeNav() {
   document.querySelector('.ul').style.left = '-100%';
   closeBtn.style.display = 'none'
   openBtn.style.display = 'block'
+  tradutor.style.display = 'block'
+
 }
 
 
@@ -251,7 +255,7 @@ trabalheConosco.addEventListener('click', () => {
 })
 let fecharCandidato = document.querySelector('.fecharCandidato')
 
-function  closeCandidato(){
+function closeCandidato() {
   candidato.style.display = 'none';
 }
 
@@ -266,13 +270,8 @@ function changeHeaderWhenScroll() {
     header.classList.remove("scroll");
   }
 }
-/* ScrollReveal: Mostrar elementos quando der scroll na página */
-const scrollReveal = scrollReveal({
-  origin: "top",
-  distance: "30px",
-  duration: 700,
-  reset: true,
-});
+
+
 /*
 <a href="#heade" class="smooth-scroll" onclick="closeNav()">Inicio</a>
           <a href="#sobre" class="smooth-scroll" onclick="closeNav()">Sobre</a>
