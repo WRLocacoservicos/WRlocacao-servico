@@ -204,7 +204,7 @@ let candidato = document.getElementById('candidato')
 
 trabalheConosco.addEventListener('click', () => {
   candidato.style.display = 'block';
-  // setInterval(closeCandidato,15000);
+
 
   candidato.innerHTML = `
    <button  class="fecharCandidato" onclick="closeCandidato()">X</button>
