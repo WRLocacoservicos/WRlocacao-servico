@@ -149,7 +149,7 @@ $(document).ready(function () {
 
 // Fim da animação suave ao clicar
 
-//Botao para o topo
+//Botao para watsapp fixo
 let mensagem = document.querySelector(".mensagem");
 
 function showMessage() {
@@ -160,41 +160,12 @@ function hideMessage() {
   mensagem.style.display = "none";
 }
 
-// function scrollToTop() {
-//   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//   if (scrollTop > 0) {
-//     window.scrollTo(0, 0);
-//     window.requestAnimationFrame(scrollToTop);
-//   }
-// }
-
-// btnTopo.addEventListener('click', function () {
-//   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//   if (scrollTop > 0) {
-//     window.requestAnimationFrame(scrollToTop);
-//   }
-// });
-
-// window.addEventListener('scroll', function () {
-//   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//   if (scrollTop > 300) {
-//     btnTopo.classList.add('show');
-
-//   } else {
-//     btnTopo.classList.remove('show');
-//   }
-//   if (windowHeight ) {
-//     btnTopo.classList.remove('show');
-
-//   }
-
-// });
 
 window.addEventListener("scroll", function () {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const scrollHeight = document.documentElement.scrollHeight;
   const clientHeight = document.documentElement.clientHeight;
-  const btnTopo = document.querySelector("#btnTopo"); // Certifique-se de selecionar o botão correto
+  const btnTopo = document.querySelector("#btnTopo");
 
   if (scrollTop + clientHeight >= scrollHeight) {
     btnTopo.classList.remove("show");
@@ -259,36 +230,3 @@ function closeCandidato() {
   candidato.style.display = 'none';
 }
 
-const header = document.querySelector("#header");
-const navHeight = header.offsetHeight;
-function changeHeaderWhenScroll() {
-  if (window.scrollY >= navHeight) {
-    // scroll é maior que a altura do header
-    header.classList.add("scroll");
-  } else {
-    // menor que a altura do header
-    header.classList.remove("scroll");
-  }
-}
-
-
-/*
-<a href="#heade" class="smooth-scroll" onclick="closeNav()">Inicio</a>
-          <a href="#sobre" class="smooth-scroll" onclick="closeNav()">Sobre</a>
-          <a href="#servico" class="smooth-scroll" onclick="closeNav()">Serviços</a>
-          <a href="#galeria" class="smooth-scroll" onclick="closeNav()">Galeria</a>
-          <a href="#BannerCliente" class="smooth-scroll" onclick="closeNav()">Clientes</a>
-          <a href="#contato" class="smooth-scroll" onclick="closeNav()">Contato</a>
-
-*/
-
-
-
-scrollReveal.reveal(
-  `#heade .banner, #heade .banner-text,
-   #sobre .container, #sobre .faca-mais-text,
-   #servico  .container-servicos, 
-
-  `,
-  { interval: 100 }
-);

@@ -128,30 +128,22 @@ nav ul {
   display: flex;
   justify-content: flex-end;
   background-image: linear-gradient(0deg, #0051b4, black);
-  transition: 5s;
 }
 
 
-nav li {
-  color: #ffffff;
-  font-size: .8rem;
-  padding: 25px;
-  text-transform: uppercase;
-  font-family: sans-serif;
-
-
-}
 
 nav ul a {
   color: #ffffff;
   font-size: .8rem;
+  padding: 20px;
   text-transform: uppercase;
   font-family: sans-serif;
   text-decoration: none;
+  transition: 1s;
 
 }
 
-nav li:hover {
+nav a:hover {
   background-image: linear-gradient(0deg, black, #0051b4);
 }
 
@@ -892,7 +884,7 @@ footer i {
 }
 
 .insta {
-  background-image: linear-gradient(0deg, #f72f72, #0a19b4);
+  background-image: linear-gradient(0deg,#04082d, #f72f72);
   color: white;
   text-align: center;
   border-top-right-radius: 10px;
@@ -901,7 +893,7 @@ footer i {
 }
 
 .insta:hover {
-  background-image: linear-gradient(0deg, #f72f72, #4d5bfa);
+  background-image: linear-gradient(0deg,#050c4f, #d64776);
 }
 
 .whatsapp i {
